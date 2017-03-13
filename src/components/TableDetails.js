@@ -69,9 +69,9 @@ export const TableDetails = (({payments, state, className})=> {
 		return row;
 	});
 
-	return <Table className = {className}
-	style = {{marginTop: "30px"}}
-	headings = {[
+	return <Table className={className}
+	style={{marginTop: "30px"}}
+	headings={[
 		"Años de ahorro", 
 		"Saldo", 
 		"Ahorro anual", 
@@ -82,8 +82,8 @@ export const TableDetails = (({payments, state, className})=> {
 		"Compañía", 
 		"Saldo Final"
 		]}
-	rows = {universityData}
-	totals = {["", "", "", "", "", Math.round(totalCommission), Math.round(totalEmployeePayment), Math.round(totalCompanyPayment), ""]}
+	rows={universityData}
+	totals={["", "", "", "", "", Math.round(totalCommission), Math.round(totalEmployeePayment), Math.round(totalCompanyPayment), ""]}
 	/>;
   }
 

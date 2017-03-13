@@ -2,11 +2,14 @@
   "name": "calculator",
   "version": "0.0.1",
   "description": "ESCALA Savings Calculator",
+  "homepage": "https://escalaeducacion.github.io/calculadora_ahorros",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "license": "MIT",
   "dependencies": {
@@ -23,6 +26,7 @@
     "reselect": "^2.5.4"
   },
   "devDependencies": {
+    "gh-pages": "^0.12.0",
     "react-scripts": "0.7.0",
     "react-test-renderer": "^15.4.0"
   },
